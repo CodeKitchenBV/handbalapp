@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08163ADB5C4053501499E001 /* Pods_handbalappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C4BFE976EE0E6E6753A36 /* Pods_handbalappTests.framework */; };
+		77AFF4141B0C3C16D39001AF /* Pods_handbalappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFB93826C5A2862C930C82A /* Pods_handbalappUITests.framework */; };
+		82B0DC1EADEDA059C88CDA9F /* Pods_handbalapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F44C5757651DAF1EEE6DDB /* Pods_handbalapp.framework */; };
+		DC7B17071E3E8B9C00208FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */; };
+		DC7B17091E3E8B9C00208FDC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17081E3E8B9C00208FDC /* FirstViewController.swift */; };
+		DC7B170B1E3E8B9C00208FDC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B170A1E3E8B9C00208FDC /* SecondViewController.swift */; };
+		DC7B170E1E3E8B9C00208FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7B170C1E3E8B9C00208FDC /* Main.storyboard */; };
+		DC7B17101E3E8B9C00208FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7B170F1E3E8B9C00208FDC /* Assets.xcassets */; };
+		DC7B17131E3E8B9C00208FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */; };
+		DC7B171E1E3E8B9D00208FDC /* handbalappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B171D1E3E8B9D00208FDC /* handbalappTests.swift */; };
+		DC7B17291E3E8B9D00208FDC /* handbalappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7B171A1E3E8B9D00208FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7B16FB1E3E8B9C00208FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7B17021E3E8B9C00208FDC;
+			remoteInfo = handbalapp;
+		};
+		DC7B17251E3E8B9D00208FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7B16FB1E3E8B9C00208FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7B17021E3E8B9C00208FDC;
+			remoteInfo = handbalapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46C05115357E93B36B4B49CD /* Pods-handbalapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalapp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalapp/Pods-handbalapp.debug.xcconfig"; sourceTree = "<group>"; };
+		60ADC0651DDB8268A40B7275 /* Pods-handbalappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalappTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalappTests/Pods-handbalappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E6B65094376CCE233541B47 /* Pods-handbalappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalappTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalappTests/Pods-handbalappTests.release.xcconfig"; sourceTree = "<group>"; };
+		985108C3348CC2B20898D8E5 /* Pods-handbalappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalappUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalappUITests/Pods-handbalappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDFB93826C5A2862C930C82A /* Pods_handbalappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handbalappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2DBDD090E240B10B24A55C /* Pods-handbalapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalapp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalapp/Pods-handbalapp.release.xcconfig"; sourceTree = "<group>"; };
+		C9E8DEB1A4B15E84A0DA61EE /* Pods-handbalappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handbalappUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-handbalappUITests/Pods-handbalappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F44C5757651DAF1EEE6DDB /* Pods_handbalapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handbalapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2C4BFE976EE0E6E6753A36 /* Pods_handbalappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handbalappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7B17031E3E8B9C00208FDC /* handbalapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handbalapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC7B17081E3E8B9C00208FDC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DC7B170A1E3E8B9C00208FDC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DC7B170D1E3E8B9C00208FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC7B170F1E3E8B9C00208FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC7B17121E3E8B9C00208FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC7B17141E3E8B9C00208FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7B17191E3E8B9D00208FDC /* handbalappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = handbalappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7B171D1E3E8B9D00208FDC /* handbalappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handbalappTests.swift; sourceTree = "<group>"; };
+		DC7B171F1E3E8B9D00208FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7B17241E3E8B9D00208FDC /* handbalappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = handbalappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handbalappUITests.swift; sourceTree = "<group>"; };
+		DC7B172A1E3E8B9D00208FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7B17001E3E8B9C00208FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B0DC1EADEDA059C88CDA9F /* Pods_handbalapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17161E3E8B9D00208FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08163ADB5C4053501499E001 /* Pods_handbalappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17211E3E8B9D00208FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AFF4141B0C3C16D39001AF /* Pods_handbalappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86A5A136FB98676B1DA5C633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46C05115357E93B36B4B49CD /* Pods-handbalapp.debug.xcconfig */,
+				BE2DBDD090E240B10B24A55C /* Pods-handbalapp.release.xcconfig */,
+				60ADC0651DDB8268A40B7275 /* Pods-handbalappTests.debug.xcconfig */,
+				6E6B65094376CCE233541B47 /* Pods-handbalappTests.release.xcconfig */,
+				C9E8DEB1A4B15E84A0DA61EE /* Pods-handbalappUITests.debug.xcconfig */,
+				985108C3348CC2B20898D8E5 /* Pods-handbalappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D735871D7C7D5E5696CC5FA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F44C5757651DAF1EEE6DDB /* Pods_handbalapp.framework */,
+				DC2C4BFE976EE0E6E6753A36 /* Pods_handbalappTests.framework */,
+				BDFB93826C5A2862C930C82A /* Pods_handbalappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7B16FA1E3E8B9C00208FDC = {
+			isa = PBXGroup;
+			children = (
+				DC7B17051E3E8B9C00208FDC /* handbalapp */,
+				DC7B171C1E3E8B9D00208FDC /* handbalappTests */,
+				DC7B17271E3E8B9D00208FDC /* handbalappUITests */,
+				DC7B17041E3E8B9C00208FDC /* Products */,
+				86A5A136FB98676B1DA5C633 /* Pods */,
+				D735871D7C7D5E5696CC5FA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7B17041E3E8B9C00208FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B17031E3E8B9C00208FDC /* handbalapp.app */,
+				DC7B17191E3E8B9D00208FDC /* handbalappTests.xctest */,
+				DC7B17241E3E8B9D00208FDC /* handbalappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7B17051E3E8B9C00208FDC /* handbalapp */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */,
+				DC7B17081E3E8B9C00208FDC /* FirstViewController.swift */,
+				DC7B170A1E3E8B9C00208FDC /* SecondViewController.swift */,
+				DC7B170C1E3E8B9C00208FDC /* Main.storyboard */,
+				DC7B170F1E3E8B9C00208FDC /* Assets.xcassets */,
+				DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */,
+				DC7B17141E3E8B9C00208FDC /* Info.plist */,
+			);
+			path = handbalapp;
+			sourceTree = "<group>";
+		};
+		DC7B171C1E3E8B9D00208FDC /* handbalappTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B171D1E3E8B9D00208FDC /* handbalappTests.swift */,
+				DC7B171F1E3E8B9D00208FDC /* Info.plist */,
+			);
+			path = handbalappTests;
+			sourceTree = "<group>";
+		};
+		DC7B17271E3E8B9D00208FDC /* handbalappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */,
+				DC7B172A1E3E8B9D00208FDC /* Info.plist */,
+			);
+			path = handbalappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7B17021E3E8B9C00208FDC /* handbalapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7B172D1E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalapp" */;
+			buildPhases = (
+				00B115BEDEAAEB80C5704EF9 /* [CP] Check Pods Manifest.lock */,
+				DC7B16FF1E3E8B9C00208FDC /* Sources */,
+				DC7B17001E3E8B9C00208FDC /* Frameworks */,
+				DC7B17011E3E8B9C00208FDC /* Resources */,
+				2D6D83A3B09FA11744EE2A3A /* [CP] Embed Pods Frameworks */,
+				F8A544DD3E1EEA8DFD3E282F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = handbalapp;
+			productName = handbalapp;
+			productReference = DC7B17031E3E8B9C00208FDC /* handbalapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC7B17181E3E8B9D00208FDC /* handbalappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7B17301E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappTests" */;
+			buildPhases = (
+				EB5CA7E7D5A29F0FF9042DF0 /* [CP] Check Pods Manifest.lock */,
+				DC7B17151E3E8B9D00208FDC /* Sources */,
+				DC7B17161E3E8B9D00208FDC /* Frameworks */,
+				DC7B17171E3E8B9D00208FDC /* Resources */,
+				BA83BCE12624177607306FF8 /* [CP] Embed Pods Frameworks */,
+				6514220C0D1A27294692B951 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7B171B1E3E8B9D00208FDC /* PBXTargetDependency */,
+			);
+			name = handbalappTests;
+			productName = handbalappTests;
+			productReference = DC7B17191E3E8B9D00208FDC /* handbalappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC7B17231E3E8B9D00208FDC /* handbalappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7B17331E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappUITests" */;
+			buildPhases = (
+				A2A06ECF583FA3C5AD4516BE /* [CP] Check Pods Manifest.lock */,
+				DC7B17201E3E8B9D00208FDC /* Sources */,
+				DC7B17211E3E8B9D00208FDC /* Frameworks */,
+				DC7B17221E3E8B9D00208FDC /* Resources */,
+				2188648AF66C6EFD9B11C714 /* [CP] Embed Pods Frameworks */,
+				88E1EC27C9686231E45758D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7B17261E3E8B9D00208FDC /* PBXTargetDependency */,
+			);
+			name = handbalappUITests;
+			productName = handbalappUITests;
+			productReference = DC7B17241E3E8B9D00208FDC /* handbalappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7B16FB1E3E8B9C00208FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "CodeKitchen B.V.";
+				TargetAttributes = {
+					DC7B17021E3E8B9C00208FDC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z8ZVVGH43R;
+						ProvisioningStyle = Automatic;
+					};
+					DC7B17181E3E8B9D00208FDC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z8ZVVGH43R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC7B17021E3E8B9C00208FDC;
+					};
+					DC7B17231E3E8B9D00208FDC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z8ZVVGH43R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC7B17021E3E8B9C00208FDC;
+					};
+				};
+			};
+			buildConfigurationList = DC7B16FE1E3E8B9C00208FDC /* Build configuration list for PBXProject "handbalapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7B16FA1E3E8B9C00208FDC;
+			productRefGroup = DC7B17041E3E8B9C00208FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7B17021E3E8B9C00208FDC /* handbalapp */,
+				DC7B17181E3E8B9D00208FDC /* handbalappTests */,
+				DC7B17231E3E8B9D00208FDC /* handbalappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7B17011E3E8B9C00208FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B17131E3E8B9C00208FDC /* LaunchScreen.storyboard in Resources */,
+				DC7B17101E3E8B9C00208FDC /* Assets.xcassets in Resources */,
+				DC7B170E1E3E8B9C00208FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17171E3E8B9D00208FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17221E3E8B9D00208FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B115BEDEAAEB80C5704EF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2188648AF66C6EFD9B11C714 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalappUITests/Pods-handbalappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D6D83A3B09FA11744EE2A3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalapp/Pods-handbalapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6514220C0D1A27294692B951 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalappTests/Pods-handbalappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88E1EC27C9686231E45758D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalappUITests/Pods-handbalappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A06ECF583FA3C5AD4516BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA83BCE12624177607306FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalappTests/Pods-handbalappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5CA7E7D5A29F0FF9042DF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A544DD3E1EEA8DFD3E282F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-handbalapp/Pods-handbalapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7B16FF1E3E8B9C00208FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B170B1E3E8B9C00208FDC /* SecondViewController.swift in Sources */,
+				DC7B17071E3E8B9C00208FDC /* AppDelegate.swift in Sources */,
+				DC7B17091E3E8B9C00208FDC /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17151E3E8B9D00208FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B171E1E3E8B9D00208FDC /* handbalappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B17201E3E8B9D00208FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B17291E3E8B9D00208FDC /* handbalappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7B171B1E3E8B9D00208FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7B17021E3E8B9C00208FDC /* handbalapp */;
+			targetProxy = DC7B171A1E3E8B9D00208FDC /* PBXContainerItemProxy */;
+		};
+		DC7B17261E3E8B9D00208FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7B17021E3E8B9C00208FDC /* handbalapp */;
+			targetProxy = DC7B17251E3E8B9D00208FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7B170C1E3E8B9C00208FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7B170D1E3E8B9C00208FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7B17121E3E8B9C00208FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7B172B1E3E8B9D00208FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC7B172C1E3E8B9D00208FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7B172E1E3E8B9D00208FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C05115357E93B36B4B49CD /* Pods-handbalapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC7B172F1E3E8B9D00208FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2DBDD090E240B10B24A55C /* Pods-handbalapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC7B17311E3E8B9D00208FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60ADC0651DDB8268A40B7275 /* Pods-handbalappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/handbalapp.app/handbalapp";
+			};
+			name = Debug;
+		};
+		DC7B17321E3E8B9D00208FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6B65094376CCE233541B47 /* Pods-handbalappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/handbalapp.app/handbalapp";
+			};
+			name = Release;
+		};
+		DC7B17341E3E8B9D00208FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E8DEB1A4B15E84A0DA61EE /* Pods-handbalappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = handbalapp;
+			};
+			name = Debug;
+		};
+		DC7B17351E3E8B9D00208FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985108C3348CC2B20898D8E5 /* Pods-handbalappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z8ZVVGH43R;
+				INFOPLIST_FILE = handbalappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.handbal.handbalappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = handbalapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7B16FE1E3E8B9C00208FDC /* Build configuration list for PBXProject "handbalapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B172B1E3E8B9D00208FDC /* Debug */,
+				DC7B172C1E3E8B9D00208FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7B172D1E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B172E1E3E8B9D00208FDC /* Debug */,
+				DC7B172F1E3E8B9D00208FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC7B17301E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B17311E3E8B9D00208FDC /* Debug */,
+				DC7B17321E3E8B9D00208FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC7B17331E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B17341E3E8B9D00208FDC /* Debug */,
+				DC7B17351E3E8B9D00208FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC7B16FB1E3E8B9C00208FDC /* Project object */;
+}
