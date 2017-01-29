@@ -61,6 +61,7 @@
 		DC7B17241E3E8B9D00208FDC /* handbalappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = handbalappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handbalappUITests.swift; sourceTree = "<group>"; };
 		DC7B172A1E3E8B9D00208FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC06A901E3EAF50009C2260 /* handbalapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = handbalapp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 		DC7B17051E3E8B9C00208FDC /* handbalapp */ = {
 			isa = PBXGroup;
 			children = (
+				DCC06A901E3EAF50009C2260 /* handbalapp.entitlements */,
 				DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */,
 				DC7B17081E3E8B9C00208FDC /* FirstViewController.swift */,
 				DC7B170A1E3E8B9C00208FDC /* SecondViewController.swift */,
@@ -247,6 +249,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z8ZVVGH43R;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DC7B17181E3E8B9D00208FDC = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -607,6 +614,7 @@
 			baseConfigurationReference = 46C05115357E93B36B4B49CD /* Pods-handbalapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = handbalapp/handbalapp.entitlements;
 				DEVELOPMENT_TEAM = Z8ZVVGH43R;
 				INFOPLIST_FILE = handbalapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,6 +629,7 @@
 			baseConfigurationReference = BE2DBDD090E240B10B24A55C /* Pods-handbalapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = handbalapp/handbalapp.entitlements;
 				DEVELOPMENT_TEAM = Z8ZVVGH43R;
 				INFOPLIST_FILE = handbalapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -711,6 +720,7 @@
 				DC7B172F1E3E8B9D00208FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC7B17301E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +729,7 @@
 				DC7B17321E3E8B9D00208FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC7B17331E3E8B9D00208FDC /* Build configuration list for PBXNativeTarget "handbalappUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +738,7 @@
 				DC7B17351E3E8B9D00208FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
