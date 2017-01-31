@@ -18,6 +18,7 @@
 		DC7B17131E3E8B9C00208FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */; };
 		DC7B171E1E3E8B9D00208FDC /* handbalappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B171D1E3E8B9D00208FDC /* handbalappTests.swift */; };
 		DC7B17291E3E8B9D00208FDC /* handbalappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */; };
+		DCC06A941E40DC79009C2260 /* CompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC06A931E40DC79009C2260 /* CompetitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
