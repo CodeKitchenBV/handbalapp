@@ -18,7 +18,9 @@
 		DC7B17131E3E8B9C00208FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */; };
 		DC7B171E1E3E8B9D00208FDC /* handbalappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B171D1E3E8B9D00208FDC /* handbalappTests.swift */; };
 		DC7B17291E3E8B9D00208FDC /* handbalappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */; };
-		DCC06A941E40DC79009C2260 /* CompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC06A931E40DC79009C2260 /* CompetitionViewController.swift */; };
+		DCC06A9A1E415F7C009C2260 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC06A991E415F7C009C2260 /* ClubsViewController.swift */; };
+		DCC06A9C1E415FAF009C2260 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC06A9B1E415FAF009C2260 /* NewsViewController.swift */; };
+		DCC06A9E1E41600E009C2260 /* CompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC06A9D1E41600E009C2260 /* CompetitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,9 @@
 		DC7B17281E3E8B9D00208FDC /* handbalappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handbalappUITests.swift; sourceTree = "<group>"; };
 		DC7B172A1E3E8B9D00208FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC06A901E3EAF50009C2260 /* handbalapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = handbalapp.entitlements; sourceTree = "<group>"; };
-		DCC06A931E40DC79009C2260 /* CompetitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompetitionViewController.swift; path = ../../CompetitionViewController.swift; sourceTree = "<group>"; };
+		DCC06A991E415F7C009C2260 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
+		DCC06A9B1E415FAF009C2260 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		DCC06A9D1E41600E009C2260 /* CompetitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +149,10 @@
 				DCC06A901E3EAF50009C2260 /* handbalapp.entitlements */,
 				DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */,
 				DC7B17081E3E8B9C00208FDC /* HomeViewController.swift */,
+				DCC06A991E415F7C009C2260 /* ClubsViewController.swift */,
 				DC7B170A1E3E8B9C00208FDC /* ScheduleViewController.swift */,
-				DCC06A931E40DC79009C2260 /* CompetitionViewController.swift */,
+				DCC06A9D1E41600E009C2260 /* CompetitionViewController.swift */,
+				DCC06A9B1E415FAF009C2260 /* NewsViewController.swift */,
 				DC7B170C1E3E8B9C00208FDC /* Main.storyboard */,
 				DC7B170F1E3E8B9C00208FDC /* Assets.xcassets */,
 				DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */,
@@ -462,9 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC06A941E40DC79009C2260 /* CompetitionViewController.swift in Sources */,
 				DC7B170B1E3E8B9C00208FDC /* ScheduleViewController.swift in Sources */,
+				DCC06A9A1E415F7C009C2260 /* ClubsViewController.swift in Sources */,
+				DCC06A9C1E415FAF009C2260 /* NewsViewController.swift in Sources */,
 				DC7B17071E3E8B9C00208FDC /* AppDelegate.swift in Sources */,
+				DCC06A9E1E41600E009C2260 /* CompetitionViewController.swift in Sources */,
 				DC7B17091E3E8B9C00208FDC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

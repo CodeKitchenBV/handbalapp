@@ -12,7 +12,6 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -23,15 +22,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="ScheduleViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -42,15 +41,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Schedule" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar" id="cPa-gy-q4n"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
         <!--Clubs-->
         <scene sceneID="auL-5K-87i">
             <objects>
-                <viewController id="Gco-Dp-5iJ" sceneMemberID="viewController">
+                <viewController id="Gco-Dp-5iJ" customClass="ClubsViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NSA-iF-Vh1"/>
                         <viewControllerLayoutGuide type="bottom" id="rZF-uI-EHA"/>
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Clubs" id="Pul-Cg-qbP"/>
+                    <tabBarItem key="tabBarItem" title="Clubs" image="handball" id="Pul-Cg-qbP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmm-a9-2Md" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,16 +79,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Competition" id="oKY-j4-nlV"/>
+                    <tabBarItem key="tabBarItem" title="Competition" image="competition" id="oKY-j4-nlV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDZ-AS-1gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="-321"/>
         </scene>
-        <!--Item-->
+        <!--News-->
         <scene sceneID="hhh-5F-2Pg">
             <objects>
-                <viewController id="Ff6-KA-qD1" sceneMemberID="viewController">
+                <viewController id="Ff6-KA-qD1" customClass="NewsViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6RE-Wm-DeX"/>
                         <viewControllerLayoutGuide type="bottom" id="Lle-0u-dmg"/>
@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KU9-j2-x7K"/>
+                    <tabBarItem key="tabBarItem" title="News" image="news" id="KU9-j2-x7K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kms-tY-E8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +128,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="calendar" width="25" height="25"/>
+        <image name="competition" width="25" height="25"/>
+        <image name="handball" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="news" width="25" height="25"/>
     </resources>
 </document>
