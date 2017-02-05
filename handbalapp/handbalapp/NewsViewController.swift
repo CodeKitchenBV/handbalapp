@@ -6,6 +6,7 @@
 //  Copyright © 2017 CodeKitchen B.V. All rights reserved.
 //
 
+import Carlos
 import UIKit
 
 class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -14,6 +15,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     let PostCellIdentifier = "PostCell"
     let PullToRefreshString = "Pull to Refresh"
+    let cache = CacheProvider.imageCache()
 
     var newsItems: [NewsItem]! = []
     var retrieving: Bool!
@@ -25,8 +27,8 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     struct NewsItem {
         let title: String
-        let url: String?
-        let by: String
+        let url: String
+        let image: String?
     }
 
     // MARK: Initialization
@@ -102,9 +104,10 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func extractNewsItem(_ item: Dictionary<String, Any>) -> NewsItem {
         let title = item["title"] as! String
-        let url = item["url"] as? String
+        let url = item["link"] as! String
+        let image = item["image"] as? String
         
-        return NewsItem(title: title, url: url, by: "")
+        return NewsItem(title: title, url: url, image: image)
     }
 
 
@@ -119,10 +122,15 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         let item = newsItems[indexPath.row]
         cell?.textLabel?.text = item.title
-        cell?.detailTextLabel?.text = item.title
 
-        var image : UIImage = UIImage(named: "osx_design_view_messages")!
-        cell?.imageView?.image = image
+        cache.get(NSURL(string: item.image!)! as URL).onSuccess { value in
+            let image = UIImageView(image: value)
+
+            DispatchQueue.main.async {
+                cell?.imageView?.image = image.image
+                //self.tableView.reloadRows(at: [indexPath], with: .none)
+            }
+        }
 
         return cell!
     }

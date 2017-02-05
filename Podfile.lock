@@ -1,20 +1,26 @@
 PODS:
   - Alamofire (4.3.0)
+  - Carlos (0.9.1):
+    - PiedPiper (~> 0.10.1)
   - Moya (8.0.2):
     - Moya/Core (= 8.0.2)
   - Moya/Core (8.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - PiedPiper (0.10.1)
   - Result (3.1.0)
 
 DEPENDENCIES:
+  - Carlos
   - Moya (~> 8.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Carlos: f6883dabefcdc762c050be9d1d7716d4beb60736
   Moya: 47f61da5b634aa71f676431b64ee0f81e976296d
+  PiedPiper: 0f9bc4e76c6fb0154d6fe6e078174e7fc391a684
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
 
-PODFILE CHECKSUM: 19e0e66e76fd35d1e518a658171dd7841a72fded
+PODFILE CHECKSUM: 5b0ac7efb11ea9c80c7eee8ff655c0c8c7672868
 
 COCOAPODS: 1.2.0
