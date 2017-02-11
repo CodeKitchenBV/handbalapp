@@ -16,6 +16,7 @@ struct NewsItem {
     let content: String
     let date: Date?
     let url: String
+    let thumbnail: String?
     let image: String?
     let source: String
 }
@@ -112,9 +113,10 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let date = dateFormatter.date(from: item["date"] as! String)
         let url = item["link"] as! String
         let source = item["source"] as! String
+        let thumbnail = item["thumbnail"] as? String
         let image = item["image"] as? String
         
-        return NewsItem(title: title, content: content, date: date, url: url, image: image, source: source)
+        return NewsItem(title: title, content: content, date: date, url: url, thumbnail: thumbnail, image: image, source: source)
     }
 
 
@@ -132,7 +134,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell?.textLabel?.text = item.title
         cell?.imageView?.image = nil
 
-        cache.get(NSURL(string: item.image!)! as URL).onSuccess { value in
+        cache.get(NSURL(string: item.thumbnail!)! as URL).onSuccess { value in
             if (cell?.tag == indexPath.row) {
                 cell?.imageView?.image = value
                 cell?.setNeedsLayout()
