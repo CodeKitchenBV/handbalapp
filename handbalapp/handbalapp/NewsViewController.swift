@@ -145,10 +145,17 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "NewsView", sender: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        //let newsItem = newsItems[indexPath.row]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if ( segue.identifier == "NewsView" ) {
+            if let viewController:NewsItemController = segue.destination as? NewsItemController {
                 let indexPath = self.tableView.indexPathForSelectedRow
+                viewController.item = newsItems[(indexPath?.row)!]
+            }
+        }
     }
 
 }
