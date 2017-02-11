@@ -9,6 +9,17 @@
 import Carlos
 import UIKit
 
+// MARK: Structs
+
+struct NewsItem {
+    let title: String
+    let content: String
+    let date: Date?
+    let url: String
+    let image: String?
+    let source: String
+}
+
 class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: Properties
@@ -16,20 +27,13 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let PostCellIdentifier = "PostCell"
     let PullToRefreshString = "Pull to Refresh"
     let cache = CacheProvider.sharedImageCache
+    let dateFormatter = DateFormatter()
 
     var newsItems: [NewsItem]! = []
     var retrieving: Bool!
     var refreshControl: UIRefreshControl!
 
     @IBOutlet weak var tableView: UITableView!
-
-    // MARK: Structs
-
-    struct NewsItem {
-        let title: String
-        let url: String
-        let image: String?
-    }
 
     // MARK: Initialization
 
@@ -104,10 +108,13 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func extractNewsItem(_ item: Dictionary<String, Any>) -> NewsItem {
         let title = item["title"] as! String
+        let content = item["content"] as! String
+        let date = dateFormatter.date(from: item["date"] as! String)
         let url = item["link"] as! String
+        let source = item["source"] as! String
         let image = item["image"] as? String
         
-        return NewsItem(title: title, url: url, image: image)
+        return NewsItem(title: title, content: content, date: date, url: url, image: image, source: source)
     }
 
 
@@ -141,6 +148,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.deselectRow(at: indexPath, animated: true)
         
         //let newsItem = newsItems[indexPath.row]
+                let indexPath = self.tableView.indexPathForSelectedRow
     }
 
 }
