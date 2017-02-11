@@ -15,7 +15,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     let PostCellIdentifier = "PostCell"
     let PullToRefreshString = "Pull to Refresh"
-    let cache = CacheProvider.imageCache()
+    let cache = CacheProvider.sharedImageCache
 
     var newsItems: [NewsItem]! = []
     var retrieving: Bool!
@@ -119,16 +119,16 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PostCellIdentifier) as UITableViewCell!
+        cell?.tag = indexPath.row
 
         let item = newsItems[indexPath.row]
         cell?.textLabel?.text = item.title
+        cell?.imageView?.image = nil
 
         cache.get(NSURL(string: item.image!)! as URL).onSuccess { value in
-            let image = UIImageView(image: value)
-
-            DispatchQueue.main.async {
-                cell?.imageView?.image = image.image
-                //self.tableView.reloadRows(at: [indexPath], with: .none)
+            if (cell?.tag == indexPath.row) {
+                cell?.imageView?.image = value
+                cell?.setNeedsLayout()
             }
         }
 
