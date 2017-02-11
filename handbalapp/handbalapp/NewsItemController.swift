@@ -27,7 +27,7 @@ class NewsItemController: UIViewController, UIWebViewDelegate {
         cache.get(NSURL(string: item.image!)! as URL).onSuccess { value in
             let imageData = NSData(data: UIImagePNGRepresentation(value)!).base64EncodedString()
             
-            content = "<img src='data:image/png;base64,\(imageData)' style='max-width:100%' />" + content
+            content = "<img src='data:image/png;base64,\(imageData)'/>" + content
             self.setWebViewContent(content: content)
         }
 
@@ -35,7 +35,7 @@ class NewsItemController: UIViewController, UIWebViewDelegate {
     }
     
     func setWebViewContent(content: String) {
-        let content = "<body style='margin: 0; padding: 0'>" + content + "</body>"
+        let content = "<style>img {max-width:100%; height: auto} iframe {max-width:100%; height: 200px}</style><body style='margin: 0; padding: 0'>" + content + "</body>"
         webView.loadHTMLString(content, baseURL: Bundle.main.bundleURL)
     }
     
