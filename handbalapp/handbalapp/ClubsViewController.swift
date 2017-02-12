@@ -160,7 +160,6 @@ class ClubsViewController: UIViewController, UITableViewDataSource, UITableViewD
         if ( segue.identifier == "ClubView" ) {
             if let viewController:ClubViewController = segue.destination as? ClubViewController {
                 let indexPath = self.tableView.indexPathForSelectedRow
-                print("1")
                 viewController.club = clubs[(indexPath?.section)!][(indexPath?.row)!]
             }
         }
