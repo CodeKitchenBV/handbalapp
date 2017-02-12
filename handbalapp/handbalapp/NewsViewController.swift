@@ -67,10 +67,14 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func retrieveNewsItems() {
+        if ( retrieving == true ) {
+            return
+        }
+
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         retrieving = true
 
-         HandbalProvider.request(.getNews) { result in
+        HandbalProvider.request(.getNews) { result in
             switch result {
                 case let .success(response):
                     do {
