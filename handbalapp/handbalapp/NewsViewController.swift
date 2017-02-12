@@ -25,7 +25,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     // MARK: Properties
 
-    let PostCellIdentifier = "PostCell"
+    let PostCellIdentifier = "NewsCell"
     let PullToRefreshString = "Pull to Refresh"
     let cache = CacheProvider.sharedImageCache
     let dateFormatter = DateFormatter()
