@@ -12,6 +12,7 @@ import Moya
 let HandbalProvider = MoyaProvider<HandbalService>()
 
 enum HandbalService {
+    case getClubs
     case getNews
 }
 
@@ -21,8 +22,10 @@ extension HandbalService: TargetType {
     /// The path to be appended to `baseURL` to form the full `URL`.
     public var path: String {
         switch self {
-        case .getNews:
-            return "/news"
+            case .getClubs:
+                return "/clubs"
+            case .getNews:
+                return "/news"
         }
     }
 
@@ -32,8 +35,8 @@ extension HandbalService: TargetType {
 
     public var parameters: [String: Any]? {
         switch self {
-        default:
-            return nil
+            default:
+                return nil
         }
     }
 

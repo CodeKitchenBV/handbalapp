@@ -48,23 +48,81 @@
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
         <!--Clubs-->
-        <scene sceneID="auL-5K-87i">
+        <scene sceneID="Uza-eb-xkK">
             <objects>
-                <viewController id="Gco-Dp-5iJ" customClass="ClubsViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Hb-ar-JuK" userLabel="Clubs" customClass="ClubsViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8o4-lJ-lhi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClubCell" textLabel="sD0-0Z-Sni" style="IBUITableViewCellStyleDefault" id="VO6-Cw-JmT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VO6-Cw-JmT" id="sml-sb-C1Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sD0-0Z-Sni">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Hb-ar-JuK" id="KjR-vQ-Qy6"/>
+                            <outlet property="delegate" destination="9Hb-ar-JuK" id="woh-Ye-9kd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Clubs" id="T9L-hh-8SD"/>
+                    <connections>
+                        <outlet property="tableView" destination="8o4-lJ-lhi" id="ods-xv-x8D"/>
+                        <segue destination="y1S-FY-T5i" kind="show" identifier="ClubView" id="N8d-5I-4gA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndO-Cg-tEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="1045"/>
+        </scene>
+        <!--Club View Controller-->
+        <scene sceneID="SgS-L2-UMx">
+            <objects>
+                <viewController id="y1S-FY-T5i" customClass="ClubViewController" customModule="handbalapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NSA-iF-Vh1"/>
-                        <viewControllerLayoutGuide type="bottom" id="rZF-uI-EHA"/>
+                        <viewControllerLayoutGuide type="top" id="5tC-d7-K3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="XK2-17-V8a"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WVh-R5-zee">
+                    <view key="view" contentMode="scaleToFill" id="HZU-ez-jgZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Clubs" image="handball" id="Pul-Cg-qbP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmm-a9-2Md" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsN-or-gua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="359"/>
+            <point key="canvasLocation" x="2142" y="1045"/>
+        </scene>
+        <!--Clubs-->
+        <scene sceneID="4PV-3W-6Vb">
+            <objects>
+                <navigationController id="3UO-Id-avF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Clubs" image="handball" id="Syp-bP-uZd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j4h-EQ-RVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Hb-ar-JuK" kind="relationship" relationship="rootViewController" id="D43-ID-GIy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfV-jh-qSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1045"/>
         </scene>
         <!--News-->
         <scene sceneID="Ndt-xb-SnN">
@@ -107,7 +165,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrN-A4-QuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445.5999999999999" y="1041.2293853073463"/>
+            <point key="canvasLocation" x="1446" y="1714"/>
         </scene>
         <!--News Item Controller-->
         <scene sceneID="dZs-Ub-le9">
@@ -126,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaH-yi-nY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141.5999999999999" y="1040.3298350824589"/>
+            <point key="canvasLocation" x="2142" y="1713"/>
         </scene>
         <!--News-->
         <scene sceneID="FXM-bw-U6y">
@@ -143,7 +201,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSk-NP-Smk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1042"/>
+            <point key="canvasLocation" x="750" y="1713"/>
         </scene>
         <!--Competition-->
         <scene sceneID="g1o-dL-pDm">
@@ -178,8 +236,8 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="w1I-gt-Rd6" kind="relationship" relationship="viewControllers" id="MHX-RL-j5c"/>
-                        <segue destination="Gco-Dp-5iJ" kind="relationship" relationship="viewControllers" id="bb6-Jc-faI"/>
-                        <segue destination="eYt-s4-b52" kind="relationship" relationship="viewControllers" id="Izy-og-o35"/>
+                        <segue destination="3UO-Id-avF" kind="relationship" relationship="viewControllers" id="bJd-ZX-0Zd"/>
+                        <segue destination="eYt-s4-b52" kind="relationship" relationship="viewControllers" id="PP8-tl-OZs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

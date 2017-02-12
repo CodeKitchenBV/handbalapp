@@ -12,6 +12,8 @@
 		82B0DC1EADEDA059C88CDA9F /* Pods_handbalapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F44C5757651DAF1EEE6DDB /* Pods_handbalapp.framework */; };
 		DC275A5C1E43CEDD00E7B3DD /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC275A5B1E43CEDD00E7B3DD /* ApiManager.swift */; };
 		DC3988711E474BCC00355274 /* NewsItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3988701E474BCC00355274 /* NewsItemController.swift */; };
+		DC3D25001E4FD6A4009883E0 /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D24FF1E4FD6A4009883E0 /* ClubViewController.swift */; };
+		DC3D25021E4FDB8B009883E0 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D25011E4FDB8B009883E0 /* helpers.swift */; };
 		DC7B17071E3E8B9C00208FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */; };
 		DC7B17091E3E8B9C00208FDC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B17081E3E8B9C00208FDC /* HomeViewController.swift */; };
 		DC7B170B1E3E8B9C00208FDC /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B170A1E3E8B9C00208FDC /* ScheduleViewController.swift */; };
@@ -54,6 +56,8 @@
 		DC275A5B1E43CEDD00E7B3DD /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		DC2C4BFE976EE0E6E6753A36 /* Pods_handbalappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handbalappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3988701E474BCC00355274 /* NewsItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemController.swift; sourceTree = "<group>"; };
+		DC3D24FF1E4FD6A4009883E0 /* ClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
+		DC3D25011E4FDB8B009883E0 /* helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
 		DC7B17031E3E8B9C00208FDC /* handbalapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handbalapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7B17081E3E8B9C00208FDC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -154,12 +158,14 @@
 				DC7B17061E3E8B9C00208FDC /* AppDelegate.swift */,
 				DC275A5B1E43CEDD00E7B3DD /* ApiManager.swift */,
 				DC7B17081E3E8B9C00208FDC /* HomeViewController.swift */,
-				DCC06A991E415F7C009C2260 /* ClubsViewController.swift */,
 				DC7B170A1E3E8B9C00208FDC /* ScheduleViewController.swift */,
 				DCC06A9D1E41600E009C2260 /* CompetitionViewController.swift */,
+				DCC06A991E415F7C009C2260 /* ClubsViewController.swift */,
+				DC3D24FF1E4FD6A4009883E0 /* ClubViewController.swift */,
 				DCC06A9B1E415FAF009C2260 /* NewsViewController.swift */,
 				DC3988701E474BCC00355274 /* NewsItemController.swift */,
 				DC7B170C1E3E8B9C00208FDC /* Main.storyboard */,
+				DC3D25011E4FDB8B009883E0 /* helpers.swift */,
 				DC7B170F1E3E8B9C00208FDC /* Assets.xcassets */,
 				DC7B17111E3E8B9C00208FDC /* LaunchScreen.storyboard */,
 				DC7B17141E3E8B9C00208FDC /* Info.plist */,
@@ -476,12 +482,14 @@
 			files = (
 				DC7B170B1E3E8B9C00208FDC /* ScheduleViewController.swift in Sources */,
 				DCC06A9A1E415F7C009C2260 /* ClubsViewController.swift in Sources */,
+				DC3D25001E4FD6A4009883E0 /* ClubViewController.swift in Sources */,
 				DCC06A9C1E415FAF009C2260 /* NewsViewController.swift in Sources */,
 				DC3988711E474BCC00355274 /* NewsItemController.swift in Sources */,
 				DC275A5C1E43CEDD00E7B3DD /* ApiManager.swift in Sources */,
 				DC7B17071E3E8B9C00208FDC /* AppDelegate.swift in Sources */,
 				DCC06A9E1E41600E009C2260 /* CompetitionViewController.swift in Sources */,
 				DC7B17091E3E8B9C00208FDC /* HomeViewController.swift in Sources */,
+				DC3D25021E4FDB8B009883E0 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
